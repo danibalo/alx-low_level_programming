@@ -1,3 +1,4 @@
-#!/bi/bash\n
+#!/bi/bash 
 gcc -o cisfun $CFILE
+
 
