@@ -1,4 +1,1 @@
-#!/bi/bash 
 gcc -o cisfun $CFILE
-
-
