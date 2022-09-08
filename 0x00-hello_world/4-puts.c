@@ -1,9 +1,14 @@
 #include <stdio.h>
-/*printing with puts*/
-int main ()
+
+
+/**
+ * main-entrypoint
+ *
+ * Return: always zero
+ */
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return 0;
-
-}	
+	return (0);
+}
 
