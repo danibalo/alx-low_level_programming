@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <limits.h>
+/**
+ * main- prints positive_or_zero_negative
+ *Returns- zero
+*/
+
 int main(void)
 {
 	int n;
@@ -18,6 +23,7 @@ int main(void)
 	else {
 		printf("%d is negative\n", n);
 	}
+	return (0);
 	
 
 }
