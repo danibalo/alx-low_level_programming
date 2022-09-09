@@ -4,7 +4,7 @@
  * main-entry_point
  *
  * Return: always zero
- * */
+ */
 
 int main(void)
 {
@@ -13,6 +13,7 @@ int main(void)
 	long int li;
 	long long int lli;
 	float f;
+
 	printf("Size of a char: %d bytes(s)\n",sizeof(c));
 	printf("Size of an int: %d bytes(s)\n",sizeof(i));
 	printf("Size of a long int: %d bytes(s)\n",sizeof(li));
