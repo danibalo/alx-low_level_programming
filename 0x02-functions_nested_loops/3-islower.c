@@ -2,19 +2,15 @@
 /**
  *_is lower - tests the lowest character
  *@c - to test
- *Return: 1 or 0
- * returns 1 if it is lower case
- * returns 0 if it is not
+ *
+ *Return: 1 if it is lower case, 0 if it is not lower case. 
  */
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	
 		return (1);
-	
 	else
-
-		return (0);
+      		return (0);
 	
 }
 
