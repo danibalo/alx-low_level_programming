@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  *
  *
@@ -6,8 +7,9 @@
  */
 int _islower(int c)
 {
+	_islower = islower();
 
-	if (islower(c))
+	if (_islower(c))
 	{
 		printf("%d is lower case \n", 1, _islower);
 	}
