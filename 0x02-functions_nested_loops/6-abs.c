@@ -4,18 +4,18 @@
  *@int: integer type is the input for absolute value
  *Return: zero
  */
-int _abs(int)
+int _abs(int n)
 {
 	
-	int m = -1 * int;
+	int m = -1 * n;
 
-	if (int > 0)
+	if (n > 0)
 	{
-		_putchar(int);
+		_putchar(n);
 	}
-	else if (int == 0)
+	else if (n == 0)
 	{
-		_putchar(int);
+		_putchar(n);
 	}
 	else if (n < 0)
 	{
