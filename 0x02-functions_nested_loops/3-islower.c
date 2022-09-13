@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *_is lower - prints the lowest character
- *
+ *_is lower - tests the lowest character
+ *@c - to test
  *Return: 1 or 0
  * returns 1 if it is lower case
  * returns 0 if it is not
