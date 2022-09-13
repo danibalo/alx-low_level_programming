@@ -4,9 +4,9 @@
  *@n: integer type is the input for absolute value
  *Return: n
  */
-int _abs(int n)
+int _abs(int i)
 {
-	if (n < 0)
-		int n = n * -1;
-	return (n);
+	if (i < 0)
+		int i = i * -1;
+	return (i);
 }
