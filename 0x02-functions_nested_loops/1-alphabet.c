@@ -4,13 +4,14 @@
  * main - prints the alphabet, in lowercase
  * Return:0
  */
-int main(void)
+
+void print_alphabet(void)
 {
 
 	
-	for (char c = 'a'; c <= 'z'; c++)
+	for (int c = 'a'; c <= 'z'; c++)
 	{
-		putchar('c');
+		putchar(c);
 		putchar('\n');
 	}
 	print_alphabet ();
