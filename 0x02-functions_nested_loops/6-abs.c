@@ -1,25 +1,12 @@
 #include "main.h"
 /**
  *_abs - computes absolute value of integer
- *@int: integer type is the input for absolute value
- *Return: zero
+ *@n: integer type is the input for absolute value
+ *Return: n
  */
 int _abs(int n)
 {
-	
-	int m = -1 * n;
-
-	if (n > 0)
-	{
-		_putchar(n);
-	}
-	else if (n == 0)
-	{
-		_putchar(n);
-	}
-	else if (n < 0)
-	{
-		_putchar(m);
-	}
-	return (0);
+	if (n < 0)
+		int n = -1 * n;
+	return (n);
 }
