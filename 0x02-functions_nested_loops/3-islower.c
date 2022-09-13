@@ -7,15 +7,13 @@
  */
 int _islower(int c)
 {
-	_islower = islower();
-
-	if (_islower(c))
+	if (c < 'a' && c > 'z')
 	{
-		printf("%d is lower case \n", 1, _islower);
+		return (1);
 	}
 	else
 	{
-		printf("%d is not\n", 0);
+		return (0);
 	}
 }
 
