@@ -1,9 +1,18 @@
 #include <stdio.h>
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
+	int i = 0;
+	int j = 0;
+
+	while (i < 10)
 	{
-		if (i !=2 && i !=4)
-			printf("%d\n", i);
+		while (j < 15)
+		{
+			printf("%d ", j);
+			j++;
+		}
+
+		printf("\n");
+		i++;
 	}
 }
