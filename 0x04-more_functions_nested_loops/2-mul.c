@@ -5,14 +5,9 @@
  * mul - multplies two integers
  * @a: the first integer
  * @b: the second integer
- * Return: 0
+ * Return: a * b
  */
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
-
-	_putchar(c);
-	return (0);
+	return (a * b);
 }
