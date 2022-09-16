@@ -10,18 +10,21 @@
 int main(void)
 {
 	int i;
+	char fi[] = "Fizz";
+	char bu[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
 	for (i = 1; 1 <= 100; i++)
 	{
-		if (i == 0)
-			printf("Buzz")
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
+		if (i == 100)
+			printf("%s", bu);
 		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("FizzBuzz");
-		else 
+			printf("%s ", fb);
+		else if (i % 3 == 0)
+			printf("%s", fi);
+		else if (i % 5 == 0)
+			printf("%s ", bu);
+		else
 			printf("%d ", i);
 	}
 	printf("\n");
