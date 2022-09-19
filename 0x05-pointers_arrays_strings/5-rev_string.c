@@ -4,6 +4,7 @@
  * @s: string to be reversed
  * Return: Always zero
  */
+
 void rev_string(char *s)
 {
 	char rv = s[0];
