@@ -1,23 +1,20 @@
 #include "main.h"
 /**
- * _strcpy - function that copies the string pointed to
- * @dest: pointer to string entry data
- * @src: destiny data
- * Return: return value of dest
+ * _strncpy - Entry point
+ * @dest: copy to
+ * @src: copy from
+ * @n: input number of char
+ * Return: Always 0 (Success)
  */
-
-char *_strcpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i;
 
-	if (src != '\0')
-	{
-		for (i = 0;  *(src + i) != '\0'; i++)
-		{
-			*(dest + i) = *(src + i);
-		}
-	}
+	for (i = 0; src[i] != '\0'; i++)
+		if (i < n)
+			dest[i] = src[i];
+		while (i < n)
+			dest[i++] = '\0';
 
-	*(dest + i) = '\0';
 	return (dest);
 }
