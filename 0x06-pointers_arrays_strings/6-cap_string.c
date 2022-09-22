@@ -1,25 +1,31 @@
-#include "main.h"
-/**
- * cap_string - capitalize letters
- * @A: strings to be tested.
- * Return: char var
- */
-char *cap_string(char *A)
-{
-	int c;
+#include <stdio.h>
 
-	while (A[c])
+/**
+  * cap_string - ...
+  * @s: ...
+  *
+  * Return: char value
+  */
+char *cap_string(char *s)
+{
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+
+	while (s[a])
 	{
-		if (A[c] >= 65 && A[c] <= 90)
+		i = 0;
+
+		while (i < cspc)
 		{
-			c++;
-			continue;
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
 		}
-		else
-		{
-			A[c] += 32;
-			c++;
-		}
+
+		a++;
 	}
-	return (A);
+
+	return (s);
 }
