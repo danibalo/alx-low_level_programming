@@ -1,7 +1,7 @@
 /**
  **_strcat - concanates two strings
  *@dest: the destination string
- * @src: the source string to be moved.
+ * @src: the source string to be concatenate.
  * Return: @dest
  */
 char *_strcat(char *dest, char *src)
