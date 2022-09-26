@@ -4,6 +4,7 @@
  * @dest:pointer to destination object
  * @src:pointer to source object
  * @n:number of bytes to copy
+ * Return: zero
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -11,7 +12,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-		dest[i] = src [i];
+		dest[i] = src[i];
 		i++;
 	}
 	return (dest);
