@@ -1,4 +1,4 @@
-#include "man.h"
+#include "main.h"
 /**
  * support - prints square root of two numbers
  * @x: the given number
@@ -7,9 +7,9 @@
  */
 int support(int x, int y)
 {
-	if (a * a > y)
+	if (x * x > y)
 		return (-1);
-	else if (a * a == y)
+	else if (x * x == y)
 		return (y);
 	else
 		return (support(x, y + 1));
