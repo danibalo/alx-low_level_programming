@@ -2,14 +2,14 @@
 /**
  * support - prints square root of two numbers
  * @x: the given number
- * @y: the number to be calculated to be square root of @a
+ * @y: the number to be calculated to be square root of @x
  * Return: success
  */
 int support(int x, int y)
 {
-	if (x * x > y)
+	if (y * y > x)
 		return (-1);
-	else if (x * x == y)
+	else if (y * y == x)
 		return (y);
 	else
 		return (support(x, y + 1));
