@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion(char *s) - prints string followed by newline
+ * _puts_recursion - prints string followed by newline
  * @s: string to be printed
  *
  * Return: 0
@@ -8,11 +8,12 @@
  */
 void _puts_recursion(char *s)
 {
-	int i = 0;
-	if s[i] = '\0'
-		return (0);
-	while (s[i] = '\0')
-		i++;
-	_puts_recursion(i);
-	_putchar('\n');
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
+
 }
