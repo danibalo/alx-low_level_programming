@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * create_array - create charcter array
  * @c: character that is element of the created arayy
