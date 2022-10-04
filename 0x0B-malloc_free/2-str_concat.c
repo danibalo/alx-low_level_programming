@@ -45,11 +45,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s2 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s1 = "";
 	}
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
@@ -61,6 +61,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	_strncat(ptr, s1, size1);
 	_strncat(ptr, s2, size2);
-	ptr = '\0';
+	ptr += '\0';
 	return (ptr);
 }
