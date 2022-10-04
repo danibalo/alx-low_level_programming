@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strlen - prints length of a string
+ * _strlen - return length of a string
  *
- * @s: string to be tested
+ * @s: char type
  * Return:  length of string
  */
 int _strlen(char *s)
@@ -61,6 +61,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	_strncat(ptr, s1, size1);
 	_strncat(ptr, s2, size2);
-	ptr += '\0';
+	ptr = '\0';
 	return (ptr);
 }
