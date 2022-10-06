@@ -4,20 +4,21 @@
  * @s1: the destination string
  * @s2: the source string
  * @n: number of byte to be concanated from s2 to s1
+ * Return: pointer to allocated memort
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int s1_ln, i, j = 0;
-       char *p;
+	char *p;
 
-       if (s1 == NULL)
-       {
-	       s1 = "";
-       }
-       if (s2 == NULL)
-       {
-	       s2 = "";
-       }
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	s1_ln = 0;
 	while (s1[s1_ln])
 	{
@@ -42,4 +43,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	p[i] = '\0';
 	return (p);
 }
-		
