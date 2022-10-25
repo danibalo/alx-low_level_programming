@@ -2,7 +2,7 @@
 
 /**
  * free_listint - frees a linked list
- * @head: head of the list
+ * @head: head of the list_
  *
  * Return: void
  */
