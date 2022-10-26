@@ -4,13 +4,14 @@
  *
  * Return: Always zero
  */
-int main()
+int main(void)
 {
-	int lower_case = 'a';
-	while (lower_case <= 'z')
+	int a;
+	while (a <= 'z')
 	{
-		putchar(lower_case);
-		lower_case++;
+		putchar(a);
+		putchar('\n');
+		a++;
 	}
 	return 0;
 }
