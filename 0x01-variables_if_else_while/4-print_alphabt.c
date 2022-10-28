@@ -3,19 +3,18 @@
  * main - Prints all lowercase letters except q and e.
  * Return: Always Success
  */
-int main(void)
+int main (void)
 {
-	char c;
+	char ch = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	if (ch != 'e' || ch != 'q')
 	{
-		if (c != 'e' && c != 'q')
+		while (ch <= 'z')
 		{
-			putchar(c);
+			putchar(ch);
+			ch++;
 		}
+		putchar('\n');
 	}
-
-	putchar('\n');
-
 	return (0);
 }
