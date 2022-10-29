@@ -5,16 +5,20 @@
  */
 int main(void)
 {
-	char c;
+	char ch = '0', ch1 = 'a';
 
-	for (c = '0'; c <= '9'; c++)
+	while (ch <= '9')
 	{
-		putchar(c);
+		putchar(ch);
+		ch++;
 	}
-	for (c = 'a'; c <= 'f'; c++)
+	while (ch1 <= 'f')
 	{
-		putchar(c);
+		putchar(ch1);
+		ch1++;
 	}
+
+
 	putchar('\n');
 	return (0);
 }
