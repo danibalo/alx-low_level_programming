@@ -5,10 +5,10 @@
 */
 int main(void)
 {
-	int count = 1;
+	int count = 0;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	while (count <= 50)
+	while (count < 50)
 	{
 		sum = fib1 + fib2;
 		fib1 = fib2;
