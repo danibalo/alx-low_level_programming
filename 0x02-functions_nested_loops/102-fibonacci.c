@@ -5,21 +5,20 @@
 */
 int main(void)
 {
-int n = 1;
-int m;
-while (n <= 50)
-{
-if (n <= 2)
-{
-printf("%d, ", n);
-}
-else if (n >= 2)
-{
-m = n + (n - 1);
-printf("%d, ", m);
-}
-n++;
-}
-printf("\n");
-return (0);
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+
+	while (count <= 50)
+	{
+		sum = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = sum;
+		printf("%lu",sum);
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
+		count ++;
+	}
+	return (0);
 }
