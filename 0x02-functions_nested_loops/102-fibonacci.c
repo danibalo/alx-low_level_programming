@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-	int count;
+	int count = 1;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	while (count <= 50)
@@ -13,12 +13,12 @@ int main(void)
 		sum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = sum;
-		printf("%lu",sum);
+		printf("%lu", sum);
 		if (count == 49)
 			printf("\n");
 		else
 			printf(", ");
-		count ++;
+		count++;
 	}
 	return (0);
 }
