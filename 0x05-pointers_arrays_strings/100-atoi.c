@@ -21,11 +21,11 @@ int _atoi(char *s)
 	if (s[i] != '\0')
 	{
 		do
+
 		{
 			result = result * 10 + (s[i] - '0');
 			i++;
-		}
-		while (s[i] >= '0' && s[i] <= '9');
+		} while (s[i] >= '0' && s[i] <= '9');
 	}
 	return (result * sign);
 
