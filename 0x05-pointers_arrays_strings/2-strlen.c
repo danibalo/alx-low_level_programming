@@ -1,19 +1,14 @@
 #include "main.h"
 /**
- * _strlen - returns length of string
- * @s: string to be tasted
- * Return: Always 0
+ * _strlen - prints lenght of string
+ * @s: string to be length calculated
+ * Retur: length of string
  */
 int _strlen(char *s)
 {
-	int i = 1, sum = 0;
-	char fe = s[0];
+	int i = 0;
 
-	while (fe != '\0')
-	{
-		sum++;
-		fe = s[i++];
-	}
-	return (sum);
+	while (*(s + i))
+		i++;
+	return (i);
 }
-
