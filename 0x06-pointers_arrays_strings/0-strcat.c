@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  **_strcat - concanates two strings
  *@dest: the destination string
@@ -8,19 +7,17 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int dest_len = 0;
+	int i = 0;
+	int j = 0;
 
-	while (dest[dest_len])
+	while (*(dest + i) != '\0')
+		i++;
+	while (*(src + j) != '\0')
 	{
-		dest_len++;
+		dest[ i + j] = src[j];
+		j++;
 	}
-	for (i = 0; src[i] != 0; i++)
-	{
-		dest[dest_len] = src[i];
-		dest_len++;
-	}
-	dest[dest_len] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }
 
