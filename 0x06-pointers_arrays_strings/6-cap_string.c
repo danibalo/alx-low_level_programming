@@ -1,31 +1,26 @@
 #include <stdio.h>
 
 /**
-  * cap_string - ...
-  * @s: ...
+  * cap_string -  capitalizes all words of a string.
+  * @s: string to ber modified
   *
   * Return: char value
   */
 char *cap_string(char *s)
 {
-	int a = 0, i;
-	int cspc = 13;
-	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	int i = 0, j;
+	char Sep[] = {'"', ' ', ',', '\n', '\t', '?', '!','.', '(', ')', '{', '}'};
 
-	while (s[a])
+	while (s[i])
 	{
-		i = 0;
-
-		while (i < cspc)
+		for (j = 0; Sep[j]; j++)
 		{
-			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-				s[a] -= 32;
-
-			i++;
+			if ((s[i - 1] == Sep[j]) && (s[i] >= 97 && s[i] <= 122))
+				s[i] -= 32;
 		}
-
-		a++;
+		i++;
 	}
-
 	return (s);
+
 }
+
