@@ -8,14 +8,14 @@
 char *leet(char *s)
 {
 	int i = 0, j;
-	char num[] = {'4', '3', '0', '7', '1'};
-	char let[] = {'A','E', 'O', 'T', 'L'};
+	char *num = "4433007711";
+	char let[] = "AaEeOoTtLl";
 
 	while (s[i])
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == let[j] || s[i] == let[j] + 32)
+			if (s[i] == let[j])
 				s[i] = num[j];
 		}
 		i++;
