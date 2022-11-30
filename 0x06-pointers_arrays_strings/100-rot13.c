@@ -11,7 +11,7 @@ char *rot13(char *s)
 
 	while(s[i])
 	{
-		for (j = 0; A[j]; j++)
+		for (j = 0; A[j] != '\0'; j++)
 		{
 			if (s[i] == A[j])
 			{
