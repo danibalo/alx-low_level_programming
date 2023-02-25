@@ -17,7 +17,9 @@ def num_of_waters(grid, i, j):
         n += 1
     return n
 
+
 def island_perimeter(grid):
+
     """Returns the perimeter of island in a given grid"""
     Perimeter = 0
 
@@ -27,4 +29,3 @@ def island_perimeter(grid):
                 Perimeter += num_of_waters(grid, i, j)
 
     return Perimeter
-
